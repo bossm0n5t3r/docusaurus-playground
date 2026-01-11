@@ -5,7 +5,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'My Site',
+  title: 'Docusaurus Playground',
   tagline: 'Dinosaurs are cool',
   favicon: 'img/favicon.ico',
 
@@ -14,16 +14,15 @@ const config: Config = {
     v4: true, // Improve compatibility with the upcoming Docusaurus v4
   },
 
-  // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  // GitHub Pages project site URL:
+  // https://bossm0n5t3r.github.io/docusaurus-playground/
+  url: 'https://bossm0n5t3r.github.io',
+  baseUrl: '/docusaurus-playground/',
 
   // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'bossm0n5t3r',
+  projectName: 'docusaurus-playground',
+  deploymentBranch: 'gh-pages',
 
   onBrokenLinks: 'throw',
 
@@ -41,10 +40,7 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          editUrl: 'https://github.com/bossm0n5t3r/docusaurus-playground/tree/main/',
         },
         blog: {
           showReadingTime: true,
@@ -52,11 +48,7 @@ const config: Config = {
             type: ['rss', 'atom'],
             xslt: true,
           },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-          // Useful options to enforce blogging best practices
+          editUrl: 'https://github.com/bossm0n5t3r/docusaurus-playground/tree/main/',
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
           onUntruncatedBlogPosts: 'warn',
@@ -75,9 +67,9 @@ const config: Config = {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: 'My Site',
+      title: 'Docusaurus Playground',
       logo: {
-        alt: 'My Site Logo',
+        alt: 'Docusaurus Logo',
         src: 'img/logo.svg',
       },
       items: [
@@ -90,7 +82,7 @@ const config: Config = {
         { type: 'docSidebar', sidebarId: 'apiSidebar', position: 'left', label: 'API' },
         { to: '/blog', label: 'Blog', position: 'left' },
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/bossm0n5t3r/docusaurus-playground',
           label: 'GitHub',
           position: 'right',
         },
@@ -109,23 +101,6 @@ const config: Config = {
           ],
         },
         {
-          title: 'Community',
-          items: [
-            {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'X',
-              href: 'https://x.com/docusaurus',
-            },
-          ],
-        },
-        {
           title: 'More',
           items: [
             {
@@ -134,7 +109,7 @@ const config: Config = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/bossm0n5t3r/docusaurus-playground',
             },
           ],
         },
